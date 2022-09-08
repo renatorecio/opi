@@ -10,6 +10,23 @@ OPI uses GitHub to manage reviews of pull requests.
 
 * Be sure to sign off on the [DCO](https://github.com/probot/dco#how-it-works).
 
+## Architecture Changes
+
+Changes to project wide goals or scope, subgroup goals or scope, or major
+architectural changes shall be:
+
+* Submitted via PR to the appropriate repo
+* Labeled with the `architecture` label
+  * Submitters may apply the `architecture` label, but maintainers for the repo
+    involved have final say on whether a given PR requires the `architecture`
+    label.
+* Broadcast to the `opi-dev` mailing list
+* Left open for review for at least 4 days
+  * Maintainers are expected to give a reasonable amount of time for review,
+    taking into account weekends and holidays.  This may mean PRs require longer
+    than 4 calendar days.
+* Approved by at least 2 maintainers for the repo involved
+
 ## Steps to Contribute
 
 Should you wish to work on an issue, please claim it first by commenting on the
