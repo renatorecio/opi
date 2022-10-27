@@ -31,6 +31,9 @@ The details of what this will look like are as follows:
     * XDP program for the Security Firewall programs
   * gRPC client code to work with the server code
   * CLI based on the gRPC client code
+  * The code is not meant to be reusable, it’s a reference implementation to prove the API works.  A behavioral model of the DPU/IPU will be provided to emulate the behavior of a DPU/IPU.
+  * For the networking stack, the code is meant to be interoperable between networking components.  So for example, a distributed network load balancer and VXLAN/GENEVE/NV-GRE overlay reference implementations are meant to interoperate with each other.
+  * For Cloud Service Providers, the API defined by the reference implementation is just the SDN control plane Northbound API between a distributed SDN controller and the DPU/IPU.
 * An integration and development platform
   * A containerized version of a DPU or IPU device
 * A test suite and test plan
